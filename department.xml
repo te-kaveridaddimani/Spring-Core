@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+           
+           <bean class="com.te.employeespring.Department" id="dev">
+           <property  value="10" name="id"></property>
+           <property value="Development"  name="dname"></property>
+           </bean>
+           
+           
+            <bean class="com.te.employeespring.Department" id="hr" primary="false" autowire-candidate="false">
+           <property  value="20" name="id"></property>
+           <property value="HR"  name="dname"></property>
+           </bean>
+            <bean class="com.te.employeespring.Department" id="sales" autowire-candidate="false">
+           <property  value="30" name="id"></property>
+           <property value="Sales"  name="dname"></property>
+           </bean>
+           
+           </beans>
